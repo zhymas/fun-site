@@ -1,0 +1,23 @@
+{% extends 'main/base.html' %}
+{% block title %}News{% endblock %}
+{% block content %} 
+<div class="info-home">
+    <div class="d-flex">
+        <div class="bg-body-tertiary p-5 rounded">
+            <div class="">
+                {% if news %}
+                {% for new in news %}
+                <div>
+                    <a class="text-dark" href="{% url 'detail_article' new.id %}">{{new.title}}</a>
+                    <small>{{new.description}}</small><br>
+                    <small>Author: {{new.author_name}}</small>
+                </div><hr>
+                {% endfor %}
+                {% else %}
+                    <h1>News is empty</h1>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

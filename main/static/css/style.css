@@ -1,0 +1,43 @@
+.logo{
+    width: 30px;
+    height: 45px;
+}
+
+.arena{
+    width: 1000px;
+    height: 500px;
+}
+
+html {
+    background-image: url(../img/Arena.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+
+.info-home {
+    background-color: white;
+    width: 1200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.forms{
+    width: 100px;
+}
+
+.create-block{
+    width: 100%;
+    height: 100%;
+}
+
+.article-create{
+    position: relative;
+    margin-top: 3.5%;
+}

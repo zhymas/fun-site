@@ -1,0 +1,14 @@
+{% extends 'main/base.html' %}
+{% block title %}News{% endblock %}
+{% block content %} 
+<div class="info-home">
+    <div class="d-flex">
+        <div class="bg-body-tertiary p-5 rounded">
+            <h1>{{article.title}}</h1>
+            <h2>{{article.description}}</h2>
+            <h5>{{article.main_text}}</h5>
+            <small>Author: {{article.author_name}}</small>
+        </div>
+    </div>
+</div>
+{% endblock %}
